@@ -1,19 +1,20 @@
 import React, {useState, useEffect} from "react";
 import NasaList from "./components/NasaList";
 import "./App.css";
+import styled from 'styled-components';
+
+const ContainerStyling = styled.div`
+    background:dimgrey;
+`;
 
 
 function App() {
 
 
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+    <ContainerStyling className="App">
       <NasaList />
-    </div>
+    </ContainerStyling>
   );
 }
 
